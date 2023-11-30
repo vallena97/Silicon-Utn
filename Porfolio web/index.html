@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="foto.jpg" alt="Tu Foto" class="img-fluid rounded-circle" style="max-width: 300px;">
+      </div>
+    </div>
+  </header>
+
+  <h1><p class="text-light">Sebastian Vallena</p></h1>
+
+  <nav>
+    <ul>
+      <li> <a href="" type="button" data-bs-toggle="modal" data-bs-target="#formularioModal">Formulario</a> </li>
+      <li> <a href="https://sebastianvallena.000webhostapp.com/" target="_blank">Proyecto actual</a> </li>
+    </ul>
+  </nav>
+
+  <section class="container mt-4">
+
+    <div class="row text-light">
+     
+    <h2>¿Quien Soy?</h2>
+
+    <p> Me llamo Sebastian Nicolas Vallena, tengo 26 años y quiero ser un programador. Me estoy especializando en el Front-End, con HTML5, CSS3 y JavaScript.<br>
+      Cree esta pagina para demostrar mis habilidades con las tegnologias mencionadas y presentarme a los demas.<br>
+      Estudie varias carreras antes de descubrir la programacion y un dia cuando tenia que practicar con PseInt
+      descubri que me gusta la logica de la programacion.
+    </p><br>
+
+    <h2>Mis Habilidades</h2>
+
+    <p>Tengo un manejo basico de html, css y javascript junto con bootstrap. Se un poco del lenguaje C++ y tambien 
+      por mi carrera aprendi un poco de php y a utilizar mysql para proyectos que tengo con conocidos.
+    </p><br>
+
+    <h2>Intereses</h2>
+
+    <p>Quiero seguir capacitandome para ser un desarrollador fullstack, y algun dia poder empezar a programar
+      un software propio, ademas de poder crear un videojuego.
+    </p><br>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 text-light">
+        <h3>Estudios</h3>
+        <p class="text-light">Analista de sistema<br>Escuela Superior Normal 10<br>Año: 2021-2023 (cursando 2do año)</p>
+        <h3>Cursos</h3>
+        <p class="text-light">Introduccion a la programacion <br>Silicon Misiones<br>año: 2023</p>
+      </div>
+
+      <div class="col-md-6">
+        <button id="toggleBoton" class="btn btn-primary">Redes Sociales</button>
+        <div id="redesSociales" class="mt-3" style="display: none;">
+          <a href="https://twitter.com/SebastinVallena" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+          <h6>Twitter</h6>
+          <a href="https://www.instagram.com/sebas.vallena/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <h6>Instagram</h6>
+          <a href="https://api.whatsapp.com/send?phone=5493755323582" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+          <h6>Whatsapp</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>Tecnologías utilizadas: HTML, CSS, Bootstrap y JavaScript</p>
+  </footer>
+
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
